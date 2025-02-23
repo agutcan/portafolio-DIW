@@ -11,30 +11,27 @@
 </head>
 <body class="d-flex flex-column min-vh-100" style="background-color: rgb(224, 223, 223);">
     <!--
-        - d-flex: Aplica la propiedad CSS "display: flex" al cuerpo, habilitando el modelo de diseño flexbox.
+        - d-flex: Aplica la propiedad CSS "display: flex" al body.
         - flex-column: Organiza los elementos internos del contenedor en una columna (de arriba a abajo).
-        - min-vh-100: Establece que el cuerpo ocupará al menos el 100% de la altura de la ventana (viewport).
-        - style="background-color: rgb(224, 223, 223);": Establece un color de fondo gris claro en el cuerpo de la página.
+        - min-vh-100: Establece que el cuerpo ocupará al menos el 100% de la altura de la ventana.
+        - background-color: rgb(224, 223, 223);: Establece un color de fondo gris claro en el cuerpo de la página.
     -->
     <nav class="navbar navbar-expand-lg sticky-top" style="background-color: rgba(0, 0, 0, 0.2);">
         <!--
             - navbar: Aplica los estilos básicos para la barra de navegación de Bootstrap.
             - navbar-expand-lg: Hace que la barra de navegación se expanda en pantallas grandes (tamaño "lg" o superior). En pantallas más pequeñas, se colapsa.
             - sticky-top: Hace que la barra de navegación permanezca fija en la parte superior cuando el usuario se desplaza por la página.
-            - style="background-color: rgba(0, 0, 0, 0.2);": Establece un fondo semi-transparente negro para la barra de navegación.
+            - background-color: rgba(0, 0, 0, 0.2);: Establece un fondo semi-transparente negro para la barra de navegación.
         -->
         <div class="container">
             <!--
                 - container: Proporciona un contenedor con un ancho fijo y centrado, adaptable al tamaño de la pantalla.
             -->
             <a href="html.html">
-                <img src="portafolio.png" class="img-fluid align-middle" alt="Portafolio icono" width="40px">
+                <img src="portafolio.png" class="align-middle" alt="Portafolio icono" width="40px">
             </a>
             <!--
-                - <img>: Inserta una imagen (en este caso, el icono de portafolio).
-                - img-fluid: Hace que la imagen sea responsive, adaptándose al tamaño del contenedor.
                 - align-middle: Alinea la imagen verticalmente al centro.
-                - alt="Portafolio icono": Texto alternativo para la imagen.
                 - width="40px": Establece un ancho fijo de 40 píxeles para la imagen.
             -->
             <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -50,11 +47,6 @@
                 - aria-expanded="false": Indica que el menú está colapsado por defecto.
                 - aria-label="Toggle navigation": Texto accesible para lectores de pantalla, describiendo la acción del botón.
                 - <span class="bi bi-arrows-expand-vertical"></span>: Icono de expandir/contraer el menú.
-            -->
-            <a class="navbar-brand fw-bold" href="#"></a>
-            <!--
-                - navbar-brand: Define el espacio para el logotipo o el nombre de la marca en la barra de navegación.
-                - fw-bold: Hace que el texto sea en negrita.
             -->
             <div class="collapse navbar-collapse text-end" id="navbarNav">
                 <!--
@@ -104,12 +96,12 @@
     <div class="container flex-grow-1 mt-5">
         <!-- 
             - container: Establece un contenedor con un ancho máximo fijo, centrado en la pantalla.
-            - flex-grow-1: Permite que este contenedor crezca y ocupe el espacio disponible dentro de un contenedor flexbox (en caso de que se use en un contenedor flex).
-            - mt-5: Aplica un margen superior de 5 unidades (dependiendo de la escala de Bootstrap).
+            - flex-grow-1: Permite que este contenedor crezca y ocupe el espacio disponible dentro de un contenedor flexbox.
+            - mt-5: Aplica un margen superior de 5.
         -->
         <div class="d-flex flex-column align-items-center justify-content-center">
             <!-- 
-                - d-flex: Aplica el modelo de diseño Flexbox al contenedor, para organizar su contenido de manera flexible.
+                - d-flex: Aplica el modelo de diseño Flexbox al contenedor.
                 - flex-column: Organiza los elementos del contenedor en una columna (de arriba a abajo).
                 - align-items-center: Alinea los elementos hijos de manera horizontal (centrado).
                 - justify-content-center: Alinea los elementos hijos de manera vertical (centrado).
@@ -133,7 +125,7 @@
                         - row-cols-sm-2: En pantallas medianas (sm), se muestran 2 columnas por fila.
                         - row-cols-lg-3: En pantallas grandes (lg), se muestran 3 columnas por fila.
                         - p-3: Aplica un relleno (padding) de 3 unidades en todos los lados.
-                        - style="box-shadow: 0 0 20px rgba(177, 175, 175, 0.5);": Añade una sombra sutil al contenedor de la fila para dar un efecto visual de profundidad.
+                        - box-shadow: 0 0 20px rgba(177, 175, 175, 0.5);: Añade una sombra al contenedor de la fila para dar un efecto visual de profundidad.
                     -->
                     <!-- Cada elemento dentro de la fila -->
                     <div class="col p-3">
@@ -141,14 +133,12 @@
                         <!-- 
                             - col: Define una columna en la cuadrícula de Bootstrap.
                             - p-3: Aplica un relleno (padding) de 3 unidades.
-                            - <a href="https://github.com/">: El enlace que redirige a la URL especificada.
-                            - <img>: La imagen que representa el proyecto.
                             - img-fluid: Hace que la imagen sea responsive, adaptándose al tamaño del contenedor.
                             - rounded: Aplica bordes redondeados a la imagen.
                             - width="184" height="148px": Define un tamaño fijo para la imagen.
                         -->
                     </div>
-                    <!-- Repite el bloque de código para cada proyecto -->
+                    <!-- Se repite el bloque de código para cada proyecto -->
                     <!-- Estos bloques corresponden a las demás imágenes de los proyectos, con diferentes imágenes y enlaces -->
                     <div class="col p-3">
                         <a href="https://github.com/"><img src="proyecto2.jpeg" alt="Proyecto 2" width="184" height="148px" class="img-fluid rounded"></a>
@@ -198,7 +188,7 @@
         <!--
             - container: Define un contenedor de Bootstrap con un ancho máximo predeterminado y centrado en la pantalla.
             - flex-grow-2: Permite que este contenedor crezca en función del espacio disponible.
-            - mt-4: Aplica un margen superior de 4 unidades (dependiendo de la escala de Bootstrap).
+            - mt-4: Aplica un margen superior de 4 unidades.
         -->
         <div class="d-flex flex-column align-items-center justify-content-center">
             <!--
@@ -225,7 +215,7 @@
                     -->
                     <div class="card-header fw-bold">Más recientes</div>
                     <!--
-                        - card-header: La cabecera de la tarjeta, contiene el título "Más recientes".
+                        - card-header: La cabecera de la tarjeta.
                         - fw-bold: Hace que el texto en la cabecera esté en negrita.
                     -->
                     <ul class="list-group list-group-flush">
@@ -237,7 +227,7 @@
                             <a href="#" target="_blank">El decorador @property en Python - cómo usarlo, ventajas y sintaxis</a>
                             <!--
                                 - list-group-item: Cada elemento de la lista dentro de la tarjeta.
-                                - <a href="#">: El enlace a un artículo. El atributo target="_blank" indica que el enlace se abrirá en una nueva pestaña del navegador.
+                                - target="_blank": Indica que el enlace se abrirá en una nueva pestaña del navegador.
                             -->
                         </li>
                         <li class="list-group-item">

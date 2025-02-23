@@ -20,56 +20,51 @@
 
 <body class="d-flex flex-column min-vh-100" style="background-color: rgb(224, 223, 223);">
     <!-- 
-    - d-flex: Aplica la propiedad CSS "display: flex" al contenedor, lo que convierte a su contenido en un modelo de diseño flexible.
-    - flex-column: Establece la dirección del eje principal de flexión como una columna (de arriba a abajo).
+    - d-flex: Aplica la propiedad CSS "display: flex" al contenedor.
+    - flex-column: Establece el body como una columna (de arriba a abajo).
     - min-vh-100: Establece la altura mínima del contenedor en un 100% de la altura de la ventana gráfica.
-    - style="background-color: rgb(224, 223, 223);": Aplica un color de fondo gris claro al cuerpo de la página.
+    - background-color: rgb(224, 223, 223);: Aplica un color de fondo gris claro al cuerpo de la página.
     -->
     <nav class="navbar navbar-expand-lg sticky-top" style="background-color: rgba(0, 0, 0, 0.2);">
         <!-- 
         - navbar: Aplica el estilo básico para crear una barra de navegación de Bootstrap.
         - navbar-expand-lg: Hace que la barra de navegación se expanda en pantallas grandes (tamaño "lg" o superior). En pantallas más pequeñas, el menú se colapsará y se podrá mostrar/ocultar.
         - sticky-top: Hace que la barra de navegación se quede fija en la parte superior de la ventana incluso cuando el usuario se desplace hacia abajo en la página.
-        - style="background-color: rgba(0, 0, 0, 0.2);": Aplica un color de fondo semi-transparente negro con una opacidad del 20%.
+        - background-color: rgba(0, 0, 0, 0.2);: Aplica un color de fondo semi-transparente negro con una opacidad del 20%.
         -->
         <div class="container">
             <!--
-            - container: Aplica un contenedor de ancho fijo y con márgenes automáticos de Bootstrap. Este contenedor se adapta al tamaño de la ventana, pero tiene un ancho máximo predefinido para no extenderse demasiado en pantallas grandes, lo que ayuda a mantener una disposición limpia y ordenada.
+            - container: Aplica un contenedor de ancho fijo y con márgenes automáticos de Bootstrap.
             -->
             <a href="#"><img src="portafolio.png" class="img-fluid align-middle" alt="Portafolio icono"
                     width="40px"></a>
             <!-- 
             - img-fluid: Hace que la imagen sea responsive (se adapta al tamaño de la pantalla y del contenedor, manteniendo su proporción).
-            - align-middle: Alinea la imagen verticalmente al centro del contenedor en línea (útil cuando la imagen está dentro de un texto o junto a otros elementos).
+            - align-middle: Alinea la imagen verticalmente al centro del contenedor en línea.
             -->
             <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="bi bi-arrows-expand-vertical"></span>
             </button>
             <!--
-            - <button>: Crea un botón interactivo en HTML. En este caso, está diseñado para ser un botón de tipo "toggle" que se utiliza para expandir o colapsar el menú de navegación en dispositivos móviles.
             - navbar-toggler: Clase de Bootstrap que aplica estilos específicos a un botón que se utiliza para alternar la visibilidad del menú de navegación en pantallas pequeñas. Al hacer clic en este botón, el menú se expandirá o colapsará.
-            - ms-auto: Aplica un margen a la izquierda automático (utiliza el sistema de espaciado de Bootstrap), empujando el botón hacia la derecha del contenedor.
-            - data-bs-toggle="collapse": Especifica que el botón activa una acción de colapso en el menú de navegación. Cuando se hace clic, se "colapsará" o "expandirá" el contenido objetivo (es decir, el menú).
+            - ms-auto: Aplica un margen a la izquierda automático, empujando el botón hacia la derecha del contenedor.
+            - data-bs-toggle="collapse": Especifica que el botón activa una acción de colapso en el menú de navegación. Cuando se hace clic, se colapsará o expandirá el menu.
             - data-bs-target="#navbarNav": Especifica el objetivo del colapso. El valor `#navbarNav` corresponde al `id` del contenedor del menú de navegación, por lo que este botón controlará la visibilidad de ese elemento.
             - aria-controls="navbarNav": Define el elemento controlado por el botón. El valor `navbarNav` hace referencia al menú de navegación que se va a mostrar o esconder.
             - aria-expanded="false": Indica que, por defecto, el menú no está expandido. Cuando el usuario haga clic en el botón, este valor cambiará a `true` si el menú se expande.
             - aria-label="Toggle navigation": Proporciona una descripción accesible para lectores de pantalla, indicando que este botón sirve para alternar (mostrar/ocultar) la navegación.
-            - <span class="bi bi-arrows-expand-vertical"></span>: Un icono de Bootstrap Icons que se usa como el contenido visual dentro del botón. En este caso, es un icono de "expandir" (representado por dos flechas en dirección vertical).
-            -->
-            <a class="navbar-brand" href="#"></a>
-            <!--
-            - navbar-brand: Clase de Bootstrap que se utiliza para marcar un elemento dentro de la barra de navegación que como la marca o el logotipo de la página.
+            - <span class="bi bi-arrows-expand-vertical"></span>: Un icono de Bootstrap Icons que se usa como el contenido visual dentro del botón.
             -->
             <div class="collapse navbar-collapse text-end" id="navbarNav">
                 <!--
-                    - collapse: Clase de Bootstrap que permite que el contenido se colapse (se oculte) y se expanda (se muestre) cuando se activa mediante un disparador (en este caso, el botón con `data-bs-toggle="collapse"`).
-                    - navbar-collapse: Clase específica de Bootstrap que se usa para colapsar el contenido de una barra de navegación (navbar) en pantallas pequeñas. Es útil para crear un menú de navegación responsivo.
-                    - text-end: Clase de Bootstrap que alinea el contenido a la derecha (final del contenedor) utilizando la propiedad `text-align: right;`. Esto hace que los elementos dentro del `div` se ubiquen al final del eje horizontal.
+                    - collapse: Clase de Bootstrap que permite que el contenido se colapse y se expanda cuando se activa mediante un disparador (en este caso, el botón con `data-bs-toggle="collapse"`).
+                    - navbar-collapse: Clase específica de Bootstrap que se usa para colapsar el contenido de una barra de navegación (navbar) en pantallas pequeñas.
+                    - text-end: Clase de Bootstrap que alinea el contenido a la derecha utilizando la propiedad `text-align: right;`.
                 -->
                 <ul class="navbar-nav ms-auto">
                     <!--
-                        - navbar-nav: Clase de Bootstrap que se usa para aplicar estilos específicos a listas dentro de una barra de navegación (navbar). Convierte la lista en un conjunto de elementos de navegación estilizados.
+                        - navbar-nav: Clase de Bootstrap que se usa para aplicar estilos específicos a listas dentro de una barra de navegación (navbar).
                         - ms-auto: Clase de Bootstrap que aplica un margen automático en el lado izquierdo (start), lo que empuja los elementos de la lista hacia la derecha. Esto se traduce en `margin-left: auto;` en CSS, lo que alinea el menú al extremo derecho del contenedor.
                     -->
                     <li class="nav-item">
@@ -80,7 +75,7 @@
                         <a class="nav-link active" href="#">Sobre mí</a>
                         <!--
                             - nav-link: Clase de Bootstrap que estiliza los enlaces dentro de una barra de navegación. Aporta espaciado y alineación adecuados para los enlaces del menú.
-                            - active: Clase de Bootstrap que destaca visualmente el enlace activo, generalmente aplicando un estilo diferenciado (como un color más oscuro o subrayado) para indicar en qué sección se encuentra el usuario.
+                            - active: Clase de Bootstrap que destaca visualmente el enlace activo.
                         -->
                     </li>
                     <li class="nav-item">
@@ -121,11 +116,11 @@
     <div class="container-fluid mt-5">
         <!--
             - container-fluid: Clase de Bootstrap que crea un contenedor que ocupa todo el ancho disponible de la pantalla, independientemente del tamaño del dispositivo.
-            - mt-5: Clase de Bootstrap que agrega un margen superior (margin-top) de un tamaño específico. El valor "5" corresponde a aproximadamente 3 rem (48px) de margen superior.
+            - mt-5: Clase de Bootstrap que agrega un margen superior (margin-top). Aplica 5 unidades de margen superior.
         -->
         <div class="d-flex flex-column align-items-center justify-content-center">
             <!--
-                - d-flex: Aplica el sistema de diseño Flexbox de Bootstrap, lo que permite controlar la distribución y alineación de los elementos internos.
+                - d-flex: Aplica el sistema de diseño Flexbox de Bootstrap, lo que permite controlar la distribución y alineación de los elementos.
                 - flex-column: Organiza los elementos internos en una columna vertical.
                 - align-items-center: Centra los elementos horizontalmente en el eje transversal.
                 - justify-content-center: Centra los elementos verticalmente en el eje principal.
@@ -133,9 +128,9 @@
 
             <img src="imagenPerfil-removebg-preview.png" class="mb-2 img-fluid" alt="Foto de perfil" style="box-shadow: 0 0 20px rgba(177, 175, 175, 0.5);">
             <!--
-                - mb-2: Clase de Bootstrap que agrega un margen inferior (margin-bottom) pequeño. El valor "2" equivale a aproximadamente 8px (0.5rem).
+                - mb-2: Clase de Bootstrap que agrega un margen inferior (margin-bottom) pequeño. Aplica 2 unidades.
                 - img-fluid: Clase de Bootstrap que hace que la imagen sea responsiva. La imagen se ajusta automáticamente al tamaño del contenedor sin perder su proporción (equivalente a `max-width: 100%` y `height: auto;` en CSS).
-                - box-shadow: Aplica una **sombra** alrededor de la imagen. 0 0 20px: Define la posición y el desenfoque de la sombra (sin desplazamiento, con un desenfoque de 20px). rgba(177, 175, 175, 0.5): Color de la sombra en formato RGBA (gris claro con 50% de opacidad).
+                - box-shadow: Aplica una sombra alrededor de la imagen. 0 0 20px: Define la posición y el desenfoque de la sombra (sin desplazamiento, con un desenfoque de 20px). rgba(177, 175, 175, 0.5): Color de la sombra en formato RGBA (gris claro con 50% de opacidad).
             -->
                 
             <h1 class="fw-bold">Hola, soy Aarón Gutiérrez</h1>
@@ -153,7 +148,7 @@
     </div>
     <div class="container-fluid p-0 mt-4">
         <!--
-            - container-fluid: Es una clase de Bootstrap que crea un contenedor que ocupa todo el ancho de la pantalla. A diferencia de "container", no tiene márgenes laterales fijos y se expande completamente.
+            - container-fluid: Es una clase de Bootstrap que crea un contenedor que ocupa todo el ancho de la pantalla.
             - p-0: Clase de Bootstrap que elimina el padding (relleno) del contenedor. Equivale a `padding: 0;` en CSS.
             - mt-4: Clase de Bootstrap que agrega un margen superior de tamaño 4.
         -->
@@ -166,7 +161,7 @@
             -->
             <h1 class="pt-5">Mi experiencia</h1>
             <!--
-                - pt-5: Clase de Bootstrap que agrega un margen superior (padding-top) de tamaño 5 (aproximadamente 3rem o 48px). Equivale a `padding-top: 3rem;` en CSS.
+                - pt-5: Clase de Bootstrap que agrega un margen superior (padding-top) de tamaño 5. Equivale a `padding-top: 3rem;` en CSS.
             -->
 
             <p>A lo largo de los años he ido adquiriendo la siguiente experiencia y he ultilizado las
@@ -174,7 +169,7 @@
         </div>
         <div class="container-fluid d-flex justify-content-center py-5">
             <!--
-                - container-fluid: Es una clase de Bootstrap que crea un contenedor que ocupa todo el ancho de la pantalla. A diferencia de "container", no tiene márgenes laterales fijos y se expande completamente.
+                - container-fluid: Es una clase de Bootstrap que crea un contenedor que ocupa todo el ancho de la pantalla.
                 - d-flex: Clase de Bootstrap que convierte el `div` en un contenedor flexbox. Flexbox es un modelo de diseño CSS que facilita la distribución de los elementos dentro del contenedor, tanto en el eje horizontal como en el vertical.
                 - justify-content-center: Clase de Bootstrap que alinea los elementos dentro del contenedor horizontalmente al centro. Equivale a `justify-content: center;` en CSS cuando se usa con Flexbox.
                 - py-5: Clase de Bootstrap que agrega relleno en el eje vertical (arriba y abajo) con tamaño 5 (aproximadamente 3rem o 48px). Equivale a `padding-top: 3rem; padding-bottom: 3rem;` en CSS.
@@ -192,26 +187,25 @@
                     <!--
                         - col-md: Es una clase de Bootstrap utilizada dentro del sistema de cuadrícula. En este caso, col-md significa que el `div` ocupará 1 columna en un diseño de cuadrícula cuando el tamaño de pantalla sea mediano (≥ 768px).
                         - border: Clase de Bootstrap que agrega un borde alrededor del contenedor. El borde es por defecto de color negro y de 1px de grosor. Se utiliza para definir visualmente los límites de un contenedor.
-                        - border-2: Clase de Bootstrap que aplica un grosor de borde de 2px al contenedor. Si usas `border` sin esta clase, el borde tendrá un grosor de 1px.
-                        - border-black: Clase de Bootstrap que define el color del borde como negro. Es útil para personalizar el borde según el estilo de la página.
-                        - hover: Clase de Bootstrap que aplica un efecto de cambio visual cuando el usuario pasa el ratón (hover) sobre el elemento. Normalmente, esta clase se usa junto con reglas CSS adicionales para cambiar el color de fondo, borde o cualquier otro estilo cuando el cursor pasa sobre el elemento.
+                        - border-2: Clase de Bootstrap que aplica un grosor de borde de 2px al contenedor.
+                        - border-black: Clase de Bootstrap que define el color del borde como negro.
+                        - hover: Esta clase se usa en el archivo CSS para cambiar el color de fondo cuando el cursor pasa sobre el elemento.
                     -->
                     <img src="portatilfoto-removebg-preview.png" alt="portatil" width="80px" class="p-3">
                     <!--
-                        - width="80px": Especifica el **ancho** de la imagen. En este caso, se establece a **80 píxeles**. Este atributo se usa para controlar el tamaño de la imagen, de modo que no ocupe el espacio completo disponible.
-
-                        - p-3: Es una clase de Bootstrap que aplica un relleno (padding) de 1rem (16 píxeles) alrededor de la imagen. El valor numérico (en este caso `3`) es una medida de espaciado proporcionada por Bootstrap. p significa "padding" y 3 es la cantidad de espaciado que se aplica. Puedes usar valores como `p-1`, `p-2`, `p-3`, etc., para definir el espaciado. Cuanto mayor es el número, mayor es el espaciado.
+                        - width="80px": Especifica el ancho de la imagen. En este caso, se establece a 80 píxeles.
+                        - p-3: Es una clase de Bootstrap que aplica un relleno (padding) de 1rem (16 píxeles) alrededor de la imagen.
                     -->
 
                     <h2 class="fw-bold">HTML</h2>
                     <!--
-                        - fw-bold: Es una clase de Bootstrap que aplica el estilo de negrita (bold) al texto dentro del elemento. Esto hace que el texto del encabezado se vea **más destacado**. fw significa "font-weight" y bold es un valor que hace que el texto se muestre en negrita.
+                        - fw-bold: Es una clase de Bootstrap que aplica el estilo de negrita (bold) al texto dentro del elemento.
                     -->
                     <p class="text-center">HTML (Hypertext Markup Language) es el lenguaje estándar utilizado para crear
                         y estructurar páginas web. Consiste en una serie de elementos y etiquetas que indican al
                         navegador cómo mostrar el contenido, como texto, imágenes, enlaces y otros recursos.</p>
                     <!--
-                    - text-center: Es una clase de Bootstrap que centra el texto dentro del elemento. Esto alinea el texto en el centro horizontalmente dentro del párrafo, haciendo que sea más atractivo visualmente, especialmente en títulos, descripciones o bloques de texto.
+                    - text-center: Es una clase de Bootstrap que centra el texto dentro del elemento. Esto alinea el texto en el centro horizontalmente dentro del párrafo.
                     -->
                     <div class="mb-3">
                         <!--
@@ -219,126 +213,90 @@
                         -->
                         <span class="badge bg-primary">Info</span> 
                         <!--
-                            - badge: es una clase de Bootstrap que se usa para aplicar un estilo visual a los elementos, dándoles la apariencia de una "etiqueta" o "insignia". Esta clase hace que el contenido del <span> se vea como un pequeño recuadro, que generalmente se utiliza para marcar un tipo de información (como etiquetas, categorías, alertas, etc.). Las insignias o badges son pequeñas y pueden tener colores, estilos y tamaños diferentes según las clases adicionales que se les añadan.
-                            - bg-primary: es una clase de Bootstrap que aplica el color de fondo principal de la interfaz, que suele ser un color azul (pero puede variar según el tema de la página). Esta clase le da al <span> un fondo colorido (en este caso, azul), lo que ayuda a resaltar la etiqueta visualmente.
+                            - badge: es una clase de Bootstrap que se usa para aplicar un estilo visual a los elementos, dándoles la apariencia de una "etiqueta" o "insignia". Esta clase hace que el contenido del <span> se vea como un pequeño recuadro.
+                            - bg-primary: es una clase de Bootstrap que aplica el color de fondo principal de la interfaz.
                         -->
                         <span class="badge bg-primary">....</span> 
-                        <!--
-                            - badge: es una clase de Bootstrap que se usa para aplicar un estilo visual a los elementos, dándoles la apariencia de una "etiqueta" o "insignia". Esta clase hace que el contenido del <span> se vea como un pequeño recuadro, que generalmente se utiliza para marcar un tipo de información (como etiquetas, categorías, alertas, etc.). Las insignias o badges son pequeñas y pueden tener colores, estilos y tamaños diferentes según las clases adicionales que se les añadan.
-                            - bg-primary: es una clase de Bootstrap que aplica el color de fondo principal de la interfaz, que suele ser un color azul (pero puede variar según el tema de la página). Esta clase le da al <span> un fondo colorido (en este caso, azul), lo que ayuda a resaltar la etiqueta visualmente.
-                        -->
                         <span class="badge bg-primary">....</span> 
-                        <!--
-                            - badge: es una clase de Bootstrap que se usa para aplicar un estilo visual a los elementos, dándoles la apariencia de una "etiqueta" o "insignia". Esta clase hace que el contenido del <span> se vea como un pequeño recuadro, que generalmente se utiliza para marcar un tipo de información (como etiquetas, categorías, alertas, etc.). Las insignias o badges son pequeñas y pueden tener colores, estilos y tamaños diferentes según las clases adicionales que se les añadan.
-                            - bg-primary: es una clase de Bootstrap que aplica el color de fondo principal de la interfaz, que suele ser un color azul (pero puede variar según el tema de la página). Esta clase le da al <span> un fondo colorido (en este caso, azul), lo que ayuda a resaltar la etiqueta visualmente.
-                        -->
                         <span class="badge bg-primary">....</span>
-                        <!--
-                            - badge: es una clase de Bootstrap que se usa para aplicar un estilo visual a los elementos, dándoles la apariencia de una "etiqueta" o "insignia". Esta clase hace que el contenido del <span> se vea como un pequeño recuadro, que generalmente se utiliza para marcar un tipo de información (como etiquetas, categorías, alertas, etc.). Las insignias o badges son pequeñas y pueden tener colores, estilos y tamaños diferentes según las clases adicionales que se les añadan.
-                            - bg-primary: es una clase de Bootstrap que aplica el color de fondo principal de la interfaz, que suele ser un color azul (pero puede variar según el tema de la página). Esta clase le da al <span> un fondo colorido (en este caso, azul), lo que ayuda a resaltar la etiqueta visualmente.
-                        -->
                     </div>
                 </div>
                 <div class="col-md border border-2 border-black hover">
                     <!--
-                        - col-md: Es una clase de Bootstrap utilizada para definir el tamaño de las columnas dentro de un sistema de rejilla (grid system). La rejilla de Bootstrap es un sistema basado en 12 columnas, y col-md se aplica a un elemento que ocupa un número de columnas específicas en pantallas de tamaño mediano y superior (es decir, dispositivos con un ancho de 768px o más). Esto significa que el contenido dentro de esta columna se ajustará automáticamente a diferentes tamaños de pantalla, proporcionando una distribución responsiva.
-                        - border: Es una clase de Bootstrap que aplica un borde alrededor del elemento. El borde tiene un color y grosor predeterminados, pero se pueden personalizar fácilmente usando clases adicionales de Bootstrap o CSS. Los bordes ayudan a separar visualmente los elementos y hacer que se destaquen en la página.
-                        - border-2: Es una clase de Bootstrap que aplica un grosor de borde de 2 píxeles. Esto hace que el borde sea más visible que el borde predeterminado (que generalmente tiene un grosor de 1 píxel).
-                        - border-black: Es una clase de Bootstrap que cambia el color del borde a negro. Esto hace que el borde tenga un color específico (negro) en lugar del color predeterminado (que es generalmente gris).
-                        - hover: Es una clase personalizada o no estándar que probablemente se esté utilizando para aplicar un efecto cuando el usuario pase el mouse sobre el elemento (efecto hover). Usualmente, en CSS, hover se usa para cambiar el estilo de un elemento cuando el puntero del mouse está sobre él. Esto puede incluir cambio de color, sombra, o transiciones de otros estilos visuales.
+                        - col-md: Es una clase de Bootstrap utilizada para definir el tamaño de las columnas dentro de un sistema de rejilla (grid system). col-md se aplica a un elemento que ocupa un número de columnas específicas en pantallas de tamaño mediano y superior (es decir, dispositivos con un ancho de 768px o más).
+                        - border: Es una clase de Bootstrap que aplica un borde alrededor del elemento. 
+                        - border-2: Es una clase de Bootstrap que aplica un grosor de borde de 2 píxeles.
+                        - border-black: Es una clase de Bootstrap que cambia el color del borde a negro. 
+                        - hover: Esta clase se usa en el archivo CSS para cambiar el color de fondo cuando el cursor pasa sobre el elemento.
                     -->
                     <img src="portatilfoto-removebg-preview.png" alt="portatil" width="80px" class="p-3">
                     <!--
-                        - width="80px": Es un atributo que define el anc** de la imagen en píxeles. En este caso, la imagen tiene un ancho de 80 píxeles, lo que significa que se redimensionará a esa anchura independientemente de sus dimensiones originales. Este atributo asegura que la imagen se ajuste a un tamaño específico en la página.
-                        - p-3: Es una clase de Bootstrap que agrega relleno (padding) al elemento. La clase p-3 proporciona un relleno de 3 unidades (dependiendo de la escala de Bootstrap, generalmente corresponde a 1 rem o 16 píxeles).
+                        - width="80px": Es un atributo que define el ancho de la imagen en píxeles. En este caso, la imagen tiene un ancho de 80 píxeles.
+                        - p-3: Es una clase de Bootstrap que agrega relleno (padding) al elemento. La clase p-3 proporciona un relleno de 3 unidades.
                     -->
                     <h2 class="fw-bold">CSS</h2>
                     <!--
-                    - fw-bold: Es una clase de Bootstrap que aplica el estilo de negrita al texto. fw significa font-weight (peso de la fuente) y bold aplica el peso máximo, lo que hace que el texto se vea más grueso y destacado. Esto es útil para resaltar títulos y hacer que el texto sea más visible o importante en la página.
+                    - fw-bold: Es una clase de Bootstrap que aplica el estilo de negrita al texto.
                     -->      
                     <p class="text-center">CSS (Cascading Style Sheets) es un lenguaje utilizado para describir la
                         presentación de un documento HTML. Permite controlar el diseño, los colores, las fuentes y el
                         formato de una página web de manera independiente de su contenido.
                     </p>
                     <!--
-                    - text-center: Es una clase de Bootstrap que centra el texto dentro del elemento. Esto alinea el texto en el centro horizontalmente dentro del párrafo, haciendo que sea más atractivo visualmente, especialmente en títulos, descripciones o bloques de texto.
+                    - text-center: Es una clase de Bootstrap que centra el texto dentro del elemento. Esto alinea el texto en el centro horizontalmente dentro del párrafo
                     -->
                     <div class="mb-3 pt-4">
                         <!--
-                            - badge: es una clase de Bootstrap que se usa para aplicar un estilo visual a los elementos, dándoles la apariencia de una "etiqueta" o "insignia". Esta clase hace que el contenido del <span> se vea como un pequeño recuadro, que generalmente se utiliza para marcar un tipo de información (como etiquetas, categorías, alertas, etc.). Las insignias o badges son pequeñas y pueden tener colores, estilos y tamaños diferentes según las clases adicionales que se les añadan.
-                            - bg-primary: es una clase de Bootstrap que aplica el color de fondo principal de la interfaz, que suele ser un color azul (pero puede variar según el tema de la página). Esta clase le da al <span> un fondo colorido (en este caso, azul), lo que ayuda a resaltar la etiqueta visualmente.
+                            - badge: es una clase de Bootstrap que se usa para aplicar un estilo visual a los elementos, dándoles la apariencia de una "etiqueta" o "insignia". 
+                            - bg-primary: es una clase de Bootstrap que aplica el color de fondo principal de la interfaz.
                         -->
                         <span class="badge bg-primary">Info</span> 
                         <!--
-                            - badge: es una clase de **Bootstrap** que se usa para aplicar un estilo visual a los elementos, dándoles la apariencia de una **"etiqueta"** o **"insignia"**. Esta clase hace que el contenido del **<span>** se vea como un pequeño recuadro, que generalmente se utiliza para marcar un tipo de información (como etiquetas, categorías, alertas, etc.). Las **insignias** o **badges** son pequeñas y pueden tener colores, estilos y tamaños diferentes según las clases adicionales que se les añadan.
-                            - bg-primary: es una clase de **Bootstrap** que aplica el **color de fondo** principal de la interfaz, que suele ser un color azul (pero puede variar según el tema de la página). Esta clase le da al **<span>** un fondo colorido (en este caso, azul), lo que ayuda a resaltar la **etiqueta** visualmente.
+                            - badge: es una clase de Bootstrap que se usa para aplicar un estilo visual a los elementos, dándoles la apariencia de una etiqueta o insignia. Esta clase hace que el contenido del <span> se vea como un pequeño recuadro.
+                            - bg-primary: es una clase de Bootstrap que aplica el color de fondo principal de la interfaz.
                         -->
                         <span class="badge bg-primary">....</span> 
-                        <!--
-                            - badge: es una clase de Bootstrap que se usa para aplicar un estilo visual a los elementos, dándoles la apariencia de una "etiqueta" o "insignia". Esta clase hace que el contenido del <span> se vea como un pequeño recuadro, que generalmente se utiliza para marcar un tipo de información (como etiquetas, categorías, alertas, etc.). Las insignias o badges son pequeñas y pueden tener colores, estilos y tamaños diferentes según las clases adicionales que se les añadan.
-                            - bg-primary: es una clase de Bootstrap que aplica el color de fondo principal de la interfaz, que suele ser un color azul (pero puede variar según el tema de la página). Esta clase le da al <span> un fondo colorido (en este caso, azul), lo que ayuda a resaltar la etiqueta visualmente.
-                        -->
                         <span class="badge bg-primary">....</span> 
-                        <!--
-                            - badge: es una clase de Bootstrap que se usa para aplicar un estilo visual a los elementos, dándoles la apariencia de una "etiqueta" o "insignia". Esta clase hace que el contenido del <span> se vea como un pequeño recuadro, que generalmente se utiliza para marcar un tipo de información (como etiquetas, categorías, alertas, etc.). Las insignias o badges son pequeñas y pueden tener colores, estilos y tamaños diferentes según las clases adicionales que se les añadan.
-                            - bg-primary: es una clase de Bootstrap que aplica el color de fondo principal de la interfaz, que suele ser un color azul (pero puede variar según el tema de la página). Esta clase le da al <span> un fondo colorido (en este caso, azul), lo que ayuda a resaltar la etiqueta visualmente.
-                        -->
                         <span class="badge bg-primary">....</span>
-                        <!--
-                            - badge: es una clase de Bootstrap que se usa para aplicar un estilo visual a los elementos, dándoles la apariencia de una "etiqueta" o "insignia". Esta clase hace que el contenido del <span> se vea como un pequeño recuadro, que generalmente se utiliza para marcar un tipo de información (como etiquetas, categorías, alertas, etc.). Las insignias o badges son pequeñas y pueden tener colores, estilos y tamaños diferentes según las clases adicionales que se les añadan.
-                            - bg-primary: es una clase de Bootstrap que aplica el color de fondo principal de la interfaz, que suele ser un color azul (pero puede variar según el tema de la página). Esta clase le da al <span> un fondo colorido (en este caso, azul), lo que ayuda a resaltar la etiqueta visualmente.
-                        -->
                     </div>
                 </div>
                 <div class="col-md border border-2 border-black hover">
                     <!--
-                        - col-md: Es una clase de Bootstrap que especifica cómo debe comportarse un elemento en una columna dentro del sistema de rejilla de Bootstrap. md hace referencia a dispositivos de tamaño medio. col-md define que el div ocupará el espacio de una columna dentro de una rejilla (grid) en dispositivos medianos o mayores.
-                        - border: Es una clase de Bootstrap que añade un borde alrededor del elemento. El borde será del color predeterminado (que generalmente es gris claro), y este borde puede ser modificado mediante otras clases.
-                        - border-2: Es una clase de Bootstrap que establece el grosor del borde a 2 píxeles. Esta clase es útil cuando deseas que el borde sea un poco más grueso que el valor predeterminado.
-                        - border-black: Es una clase de Bootstrap que cambia el color del borde a negro. Este atributo mejora la visibilidad del borde, haciendo que el contorno del div sea más claro y destacado.
-                        - hover: Es una clase personalizada (no es de Bootstrap por defecto) que indica que el elemento tendrá un efecto visual al pasar el ratón sobre él. Generalmente, esta clase se asocia con un estilo CSS que cambia el aspecto del div cuando el usuario coloca el cursor sobre el elemento. Este efecto puede ser un cambio de color, tamaño o cualquier otro estilo visual.
+                        - col-md: Es una clase de Bootstrap que especifica cómo debe comportarse un elemento en una columna dentro del sistema de rejilla de Bootstrap. col-md define que el div ocupará el espacio de una columna dentro de una rejilla (grid) en dispositivos medianos o mayores.
+                        - border: Es una clase de Bootstrap que añade un borde alrededor del elemento.
+                        - border-2: Es una clase de Bootstrap que establece el grosor del borde a 2 píxeles.
+                        - border-black: Es una clase de Bootstrap que cambia el color del borde a negro. 
+                        - hover: Esta clase se usa en el archivo CSS para cambiar el color de fondo cuando el cursor pasa sobre el elemento.
                     -->
                     
                     <img src="portatilfoto-removebg-preview.png" alt="portatil" width="80px" class="p-3">
                     <!--
-                        - width="80px": Es un atributo que define el ancho de la imagen en píxeles. En este caso, la imagen tiene un ancho de 80 píxeles, lo que significa que se redimensionará a esa anchura independientemente de sus dimensiones originales. Este atributo asegura que la imagen se ajuste a un tamaño específico en la página.
-                        - p-3: Es una clase de Bootstrap que agrega relleno (padding) al elemento. La clase p-3 proporciona un relleno de 3 unidades (dependiendo de la escala de Bootstrap, generalmente corresponde a 1 rem o 16 píxeles). El relleno es el espacio adicional dentro del borde del elemento, creando espacio entre el contenido de la imagen y el borde que la rodea.
+                        - width="80px": Es un atributo que define el ancho de la imagen en píxeles. En este caso, la imagen tiene un ancho de 80 píxeles.
+                        - p-3: Es una clase de Bootstrap que agrega relleno (padding) al elemento. La clase p-3 proporciona un relleno de 3 unidades.
                     -->
                     <h2 class="fw-bold">JS</h2>
                     <!--
-                        - fw-bold: Es una clase de Bootstrap que aplica el estilo de negrita al texto dentro del elemento. Esto hace que el texto del encabezado se vea más destacado. Significa "font-weight" y bold es un valor que hace que el texto se muestre en negrita.
+                        - fw-bold: Es una clase de Bootstrap que aplica el estilo de negrita al texto dentro del elemento.
                     -->
                     <p class="text-center">JavaScript (JS) es un lenguaje de programación utilizado para crear contenido
                         interactivo y dinámico en páginas web. Permite a los desarrolladores manipular el HTML y CSS de
                         una página después de que haya sido cargada.</p>
                         <!--
-                            - text-center: Es una clase de Bootstrap que centra el texto dentro del elemento. Esto alinea el texto en el centro horizontalmente dentro del párrafo, haciendo que sea más atractivo visualmente, especialmente en títulos, descripciones o bloques de texto.
+                            - text-center: Es una clase de Bootstrap que centra el texto dentro del elemento. Esto alinea el texto en el centro horizontalmente dentro del párrafo.
                         -->
                     <div class="mb-3 pt-4">
                         <!--
                             - mb-3: Es una clase de Bootstrap que aplica un margen inferior de tamaño 3. Esto crea un espacio debajo del elemento para separar el contenido de otros elementos que se encuentren debajo.
-                            - pt-4: Es otra clase de Bootstrap que establece un relleno superior (padding superior) de tamaño 4. Indica que se está aplicando relleno en la parte superior del elemento. Similar al caso anterior, 4 es un valor en la escala de espaciado de Bootstrap, lo que indica un relleno más grande en la parte superior del elemento. Esta clase ayuda a agregar espacio dentro del elemento, empujando el contenido hacia abajo para crear un espaciado adecuado.
+                            - pt-4: Es otra clase de Bootstrap que establece un relleno superior (padding superior) de tamaño 4. Indica que se está aplicando relleno en la parte superior del elemento. 
                         -->
                         <span class="badge bg-primary">Info</span> 
                         <!--
-                            - badge: es una clase de Bootstrap que se usa para aplicar un estilo visual a los elementos, dándoles la apariencia de una "etiqueta" o "insignia". Esta clase hace que el contenido del <span> se vea como un pequeño recuadro, que generalmente se utiliza para marcar un tipo de información (como etiquetas, categorías, alertas, etc.). Las insignias o badges son pequeñas y pueden tener colores, estilos y tamaños diferentes según las clases adicionales que se les añadan.
-                            - bg-primary: es una clase de Bootstrap que aplica el color de fondo principal de la interfaz, que suele ser un color azul (pero puede variar según el tema de la página). Esta clase le da al <span> un fondo colorido (en este caso, azul), lo que ayuda a resaltar la etiqueta visualmente.
+                            - badge: es una clase de Bootstrap que se usa para aplicar un estilo visual a los elementos, dándoles la apariencia de una "etiqueta" o "insignia". Esta clase hace que el contenido del <span> se vea como un pequeño recuadro.
+                            - bg-primary: es una clase de Bootstrap que aplica el color de fondo principal de la interfaz.
                         -->
                         <span class="badge bg-primary">....</span> 
-                        <!--
-                            - badge: es una clase de Bootstrap que se usa para aplicar un estilo visual a los elementos, dándoles la apariencia de una "etiqueta" o "insignia". Esta clase hace que el contenido del <span> se vea como un pequeño recuadro, que generalmente se utiliza para marcar un tipo de información (como etiquetas, categorías, alertas, etc.). Las insignias o badges son pequeñas y pueden tener colores, estilos y tamaños diferentes según las clases adicionales que se les añadan.
-                            - bg-primary: es una clase de Bootstrap que aplica el color de fondo principal de la interfaz, que suele ser un color azul (pero puede variar según el tema de la página). Esta clase le da al <span> un fondo colorido (en este caso, azul), lo que ayuda a resaltar la etiqueta visualmente.
-                        -->
                         <span class="badge bg-primary">....</span> 
-                        <!--
-                            - badge: es una clase de Bootstrap que se usa para aplicar un estilo visual a los elementos, dándoles la apariencia de una "etiqueta" o "insignia". Esta clase hace que el contenido del <span> se vea como un pequeño recuadro, que generalmente se utiliza para marcar un tipo de información (como etiquetas, categorías, alertas, etc.). Las insignias o badges son pequeñas y pueden tener colores, estilos y tamaños diferentes según las clases adicionales que se les añadan.
-                            - bg-primary: es una clase de Bootstrap que aplica el color de fondo principal de la interfaz, que suele ser un color azul (pero puede variar según el tema de la página). Esta clase le da al <span> un fondo colorido (en este caso, azul), lo que ayuda a resaltar la*etiqueta visualmente.
-                        -->
                         <span class="badge bg-primary">....</span>
-                        <!--
-                            - badge: es una clase de Bootstrap que se usa para aplicar un estilo visual a los elementos, dándoles la apariencia de una "etiqueta" o "insignia". Esta clase hace que el contenido del <span> se vea como un pequeño recuadro, que generalmente se utiliza para marcar un tipo de información (como etiquetas, categorías, alertas, etc.). Las insignias o badges son pequeñas y pueden tener colores, estilos y tamaños diferentes según las clases adicionales que se les añadan.
-                            - bg-primary: es una clase de Bootstrap que aplica el color de fondo principal de la interfaz, que suele ser un color azul (pero puede variar según el tema de la página). Esta clase le da al <span> un fondo colorido (en este caso, azul), lo que ayuda a resaltar la etiqueta visualmente.
-                        -->
                     </div>
                 </div>
             </div>

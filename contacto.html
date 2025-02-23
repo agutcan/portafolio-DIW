@@ -14,7 +14,7 @@
     <!-- 
         - d-flex: Aplica la propiedad CSS "display: flex" al contenedor, convirtiéndolo en un modelo de diseño flexible.
         - flex-column: Organiza los elementos internos en una columna (de arriba hacia abajo).
-        - min-vh-100: Establece que el contenedor tendrá al menos el 100% de la altura de la ventana gráfica (viewport).
+        - min-vh-100: Establece que el contenedor tendrá al menos el 100% de la altura de la ventana gráfica.
         - style="background-color: rgb(224, 223, 223);": Aplica un color de fondo gris claro al cuerpo de la página.
     -->
     <nav class="navbar navbar-expand-lg sticky-top" style="background-color: rgba(0, 0, 0, 0.2);">
@@ -22,11 +22,11 @@
             - navbar: Aplica el estilo básico para la barra de navegación de Bootstrap.
             - navbar-expand-lg: Hace que la barra de navegación se expanda en pantallas grandes (tamaño "lg" o superior). En pantallas más pequeñas, el menú se colapsará.
             - sticky-top: Hace que la barra de navegación se quede fija en la parte superior de la página mientras el usuario se desplaza.
-            - style="background-color: rgba(0, 0, 0, 0.2);": Aplica un color de fondo negro semi-transparente.
+            - background-color: rgba(0, 0, 0, 0.2);: Aplica un color de fondo negro semi-transparente.
         -->
         <div class="container">
             <!-- 
-                - container: Aplica un contenedor con un ancho fijo que se adapta al tamaño de la pantalla. Ayuda a mantener un diseño ordenado.
+                - container: Aplica un contenedor con un ancho fijo que se adapta al tamaño de la pantalla.
             -->
             <a href="html.html"><img src="portafolio.png" class="img-fluid align-middle" alt="Portafolio icono" width="40px"></a>
             <!-- 
@@ -49,16 +49,11 @@
                 - aria-label="Toggle navigation": Descripción accesible para lectores de pantalla.
                 - <span class="bi bi-arrows-expand-vertical"></span>: Icono que se muestra dentro del botón, representando la acción de expandir o contraer el menú.
             -->
-            <a class="navbar-brand fw-bold" href="#"></a>
-            <!-- 
-                - navbar-brand: Marca o logotipo de la página.
-                - fw-bold: Aplica un estilo de texto en negrita.
-            -->
             <div class="collapse navbar-collapse text-end" id="navbarNav">
                 <!-- 
                     - collapse: Hace que el contenido se colapse o se expanda.
                     - navbar-collapse: Estilo específico de Bootstrap para colapsar el menú en pantallas pequeñas.
-                    - text-end: Alinea el texto al final del contenedor (derecha).
+                    - text-end: Alinea el texto al final del contenedor.
                 -->
                 <ul class="navbar-nav ms-auto">
                     <!-- 
@@ -123,19 +118,19 @@
             <!-- 
             - fw-bold: Aplica negrita al texto.
             - display-4: Hace que el tamaño de la fuente sea grande (clase de Bootstrap para títulos).
-            - mb-4: Aplica un margen inferior de tamaño 4 (aproximadamente 1.5 rem).
+            - mb-4: Aplica un margen inferior de tamaño 4.
             -->
             <div class="card shadow-lg border-0" style="max-width: 600px;">
                 <!-- 
                 - card: Crea una tarjeta con estilo en Bootstrap.
                 - shadow-lg: Aplica una sombra grande alrededor de la tarjeta.
                 - border-0: Elimina el borde de la tarjeta.
-                - style="max-width: 600px;": Establece un ancho máximo para la tarjeta.
+                - max-width: 600px;: Establece un ancho máximo para la tarjeta.
                 -->
                 <div class="card-body p-5">
                     <!-- 
                     - card-body: Crea un área dentro de la tarjeta para contener el contenido.
-                    - p-5: Aplica un relleno (padding) de tamaño 5 (aproximadamente 3 rem).
+                    - p-5: Aplica un relleno (padding) de tamaño 5.
                     -->
                     <p class="fs-5"><strong>🏢 Mi oficina</strong><br>1234 Div St #1000, San Francisco, CA 9251</p>
                     <!-- 
@@ -149,11 +144,11 @@
                         - d-flex: Aplica el modelo de diseño Flexbox.
                         - justify-content-center: Centra los elementos en el eje horizontal.
                         - gap-4: Aplica un espacio de 1.5 rem entre los elementos.
-                        - mt-3: Aplica un margen superior de tamaño 3 (aproximadamente 1 rem).
+                        - mt-3: Aplica un margen superior de tamaño 3.
                         -->
                         <a href="#" class="text-primary fs-5"><i class="bi bi-facebook"></i> Facebook</a>
                         <!-- 
-                        - text-primary: Aplica el color primario (generalmente azul).
+                        - text-primary: Aplica el color primario.
                         - fs-5: Establece el tamaño de la fuente.
                         - <i class="bi bi-facebook"></i>: Icono de Facebook de Bootstrap Icons.
                         -->
@@ -164,5 +159,6 @@
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

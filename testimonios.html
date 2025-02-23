@@ -1,208 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link href="node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
     <link rel="stylesheet" href="inicio.css">
     <title>Portafolio - Sobre mi</title>
 </head>
+
 <body class="d-flex flex-column min-vh-100" style="background-color: rgb(224, 223, 223);">
-  <!--
-      - d-flex: Establece el body como un contenedor flexbox para facilitar el diseño.
+    <!--
+      - d-flex: Aplica la propiedad CSS "display: flex" al contenedor, convirtiéndolo en un modelo de diseño flexible.
       - flex-column: Organiza los elementos dentro del body en una columna (de arriba a abajo).
       - min-vh-100: Asegura que el body ocupe al menos el 100% de la altura de la ventana del navegador.
       - background-color: Establece el color de fondo a un tono gris claro.
   -->
-  <nav class="navbar navbar-expand-lg sticky-top" style="background-color: rgba(0, 0, 0, 0.2);">
-      <!--
+    <nav class="navbar navbar-expand-lg sticky-top" style="background-color: rgba(0, 0, 0, 0.2);">
+        <!--
           - navbar: Aplica el estilo de barra de navegación de Bootstrap.
           - navbar-expand-lg: Hace que la barra de navegación se expanda en pantallas grandes (lg).
           - sticky-top: Hace que la barra de navegación quede fija en la parte superior al hacer scroll.
-          - background-color: Establece el color de fondo de la barra de navegación a un negro translúcido.
+          - background-color: Establece el color de fondo de la barra de navegación a un negro un poco transparente.
       -->
-      <div class="container">
-          <!--
+        <div class="container">
+            <!--
               - container: Establece un contenedor con un ancho máximo predeterminado, centrado.
           -->
-          <a href="html.html">
-              <img src="portafolio.png" class="img-fluid align-middle" alt="Portafolio icono" width="40px">
-          </a>
-          <!--
-              - <a href="html.html">: Enlace al archivo "html.html" (posiblemente la página de inicio).
-              - <img src="portafolio.png">: Muestra una imagen de un icono de portafolio. El atributo class "img-fluid" permite que la imagen se ajuste automáticamente al ancho disponible y "align-middle" alinea verticalmente la imagen en el centro.
+            <a href="html.html">
+                <img src="portafolio.png" class="img-fluid align-middle" alt="Portafolio icono" width="40px">
+            </a>
+            <!--
+              - img-fluid: permite que la imagen se ajuste automáticamente al ancho disponible. 
+              - align-middle alinea verticalmente la imagen en el centro.
               - width="40px": Define el ancho de la imagen en 40 píxeles.
           -->
-          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="bi bi-arrows-expand-vertical"></span>
-          </button>
-          <!--
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="bi bi-arrows-expand-vertical"></span>
+            </button>
+            <!--
               - navbar-toggler: Crea el botón que aparece en pantallas pequeñas para mostrar u ocultar la barra de navegación.
               - ms-auto: Aplica margen a la izquierda para alinear el botón a la derecha.
               - data-bs-toggle="collapse": Permite alternar la visibilidad de los elementos del menú de navegación.
               - <span class="bi bi-arrows-expand-vertical"></span>: Representa un icono de expansión vertical utilizando Bootstrap Icons.
           -->
-          <a class="navbar-brand fw-bold" href="#"></a>
-          <!--
-              - navbar-brand: Crea un enlace de marca en la barra de navegación (a menudo se utiliza para mostrar el nombre o logo).
-              - fw-bold: Aplica la propiedad de texto en negrita.
-              - href="#": El enlace actualmente no lleva a ningún lugar (podría ser un marcador de posición).
-          -->
-          <div class="collapse navbar-collapse text-end" id="navbarNav">
-              <!--
+            <div class="collapse navbar-collapse text-end" id="navbarNav">
+                <!--
                   - collapse navbar-collapse: Hace que los elementos de la barra de navegación se oculten y se expandan en pantallas pequeñas.
                   - text-end: Alinea el texto a la derecha dentro del contenedor.
               -->
-              <ul class="navbar-nav ms-auto">
-                  <!--
+                <ul class="navbar-nav ms-auto">
+                    <!--
                       - navbar-nav: Define una lista de elementos de navegación.
                       - ms-auto: Alinea los elementos de la lista a la derecha.
                   -->
-                  <li class="nav-item">
-                      <a class="nav-link" href="html.html">Sobre mí</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="proyectos.html">Proyectos</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link active" href="#">Testimonios</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="contacto.html">Contacto</a>
-                  </li>
-              </ul>
-          </div>
-      </div>
-  </nav>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html.html">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="proyectos.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Testimonios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
 
-  <div class="container flex-grow-1 mt-5">
-    <!-- 
+    <div class="container flex-grow-1 mt-5">
+        <!-- 
         - container: Contenedor con un ancho adaptativo que ayuda a alinear los elementos dentro de él.
         - flex-grow-1: Hace que el contenedor ocupe todo el espacio disponible en la página.
         - mt-5: Aplica un margen superior de tamaño 5 (aproximadamente 3 rem).
     -->
-    <div class="d-flex flex-column align-items-center justify-content-center">
-        <!-- 
-            - d-flex: Aplica el modelo de diseño Flexbox al contenedor.
-            - flex-column: Organiza los elementos en una columna (de arriba hacia abajo).
-            - align-items-center: Centra los elementos en el eje transversal (horizontal).
-            - justify-content-center: Centra los elementos en el eje principal (vertical).
-        -->
-        <h1 class="fw-bold pb-4">Testimonios</h1>
-        <!-- 
-            - fw-bold: Aplica un estilo de texto en negrita.
-            - pb-4: Aplica un margen inferior de tamaño 4 (aproximadamente 1.5 rem).
-            -->
-        <p>Estos son algunos testimonios de mis clientes...</p>
-
-        <div class="container-fluid text-center rounded w-50 p-2" style="box-shadow: 0 0 20px rgba(177, 175, 175, 0.5);">
+        <div class="d-flex flex-column align-items-center justify-content-center">
             <!-- 
+            - d-flex: Aplica el modelo de diseño Flexbox al contenedor.
+            - flex-column: Organiza los elementos en una columna (de arriba hacia abajo.
+            - align-items-center: Centra los elementos en el eje horizontal.
+            - justify-content-center: Centra los elementos en el eje vertical.
+        -->
+            <h1 class="fw-bold pb-4">Testimonios</h1>
+            <!-- 
+            - fw-bold: Aplica un estilo de texto en negrita.
+            - pb-4: Aplica un margen inferior de tamaño 4.
+        -->
+            <p>Estos son algunos testimonios de mis clientes...</p>
+
+            <div class="container-fluid text-center rounded w-50 p-2"
+                style="box-shadow: 0 0 20px rgba(177, 175, 175, 0.5);">
+                <!-- 
                 - container-fluid: Contenedor con un ancho completo (100% del ancho disponible).
                 - text-center: Centra el texto dentro del contenedor.
                 - rounded: Aplica bordes redondeados al contenedor.
                 - w-50: Establece el ancho del contenedor al 50% del tamaño disponible.
                 - p-2: Aplica un relleno (padding) de tamaño 2 (aproximadamente 0.5 rem).
-                - style="box-shadow: 0 0 20px rgba(177, 175, 175, 0.5);": Aplica una sombra difusa a los bordes del contenedor.
+                - box-shadow: 0 0 20px rgba(177, 175, 175, 0.5);: Aplica una sombra difusa a los bordes del contenedor.
             -->
-            <div id="carouselExampleCaptions" class="carousel slide rounded" data-bs-ride="carousel">
-                <!-- 
-                    - carousel: Aplica el estilo de carrusel de Bootstrap para crear un slider de imágenes.
+                <div id="carouselExampleCaptions" class="carousel slide rounded" data-bs-ride="carousel">
+                    <!-- 
+                    - carousel: Aplica el estilo de carrusel de Bootstrap para crear un carrusel de imágenes.
                     - slide: Define que el carrusel tiene un comportamiento deslizante.
                     - rounded: Aplica bordes redondeados al carrusel.
-                    - data-bs-ride="carousel": Habilita el control automático de deslizamiento (automático al cargar la página).
+                    - data-bs-ride="carousel": Habilita el control automático de deslizamiento.
                 -->
-                <div class="carousel-indicators">
-                    <!-- 
+                    <div class="carousel-indicators">
+                        <!-- 
                         - carousel-indicators: Define los indicadores de navegación del carrusel.
                         - <button> con los atributos "data-bs-slide-to": Define las posiciones de los botones para navegar entre los slides.
                         - aria-current="true": Indica que el primer botón es el actual.
                         - aria-label="Slide X": Define etiquetas accesibles para cada botón.
                     -->
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner rounded">
-                    <!-- 
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner rounded">
+                        <!-- 
                         - carousel-inner: Contenedor de los elementos de las diapositivas dentro del carrusel.
                         - rounded: Aplica bordes redondeados al contenedor de las diapositivas.
                     -->
-                    <div class="carousel-item active">
-                        <!-- 
+                        <div class="carousel-item active">
+                            <!-- 
                             - carousel-item: Define cada una de las diapositivas del carrusel.
                             - active: Hace que esta diapositiva esté visible al cargar la página.
+                    -->
+                            <img src="testimonio1.jpeg" class="d-block w-100 " alt="...">
+                            <!-- 
+                        - d-block w-100: Hace que la imagen ocupe el 100% del ancho disponible y sea un bloque (sin margen).
+                    -->
+                            <div class="carousel-caption d-none d-md-block">
+                                <!-- 
+                            - carousel-caption: Muestra un pie de foto sobre la imagen del carrusel.
+                            - d-none d-md-block: Oculta el pie de foto en pantallas pequeñas y lo muestra en pantallas medianas y grandes.
                         -->
-                        <img src="testimonio1.jpeg" class="d-block w-100 " alt="...">
-                        <!-- 
-                            - img: Muestra la imagen del testimonio.
-                            - class="d-block w-100": Hace que la imagen ocupe el 100% del ancho disponible y sea un bloque (sin margen).
-                            - alt: Proporciona un texto alternativo para la imagen si no se carga.
+                                <h5 class="fw-bold" style="text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); ">Martín</h5>
+                                <!--
+                            - fw-bold: Aplica texto en negrita.
+                            - text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);: Aplica un sombreado al texto para mejorar su visibilidad sobre imágenes.
                         -->
-                        <div class="carousel-caption d-none d-md-block">
-                            <!-- 
-                                - carousel-caption: Muestra un pie de foto sobre la imagen del carrusel.
-                                - d-none d-md-block: Oculta el pie de foto en pantallas pequeñas y lo muestra en pantallas medianas y grandes.
-                            -->
-                            <h5 class="fw-bold" style="text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); ">Martín</h5>
-                            <!-- 
-                                - fw-bold: Aplica texto en negrita al nombre del cliente.
-                                - style="text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);": Aplica un sombreado al texto para mejorar su visibilidad sobre imágenes.
-                            -->
-                            <p class="fw-bold" style="text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); ">Some representative placeholder content for the first slide.</p>
-                            <!-- 
+                                <p class="fw-bold" style="text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); ">Some
+                                    representative placeholder content for the first slide.</p>
+                                <!-- 
                                 - fw-bold: Aplica texto en negrita a la cita del cliente.
-                                - style="text-shadow": Aplica el mismo sombreado al texto para mantener la consistencia.
-                            -->
+                                - text-shadow: Aplica el mismo sombreado al texto para mantener la consistencia.
+                        -->
+                            </div>
+                        </div>
+                        <!-- Igual que la imagen anterior -->
+                        <div class="carousel-item">
+                            <img src="testimonio2.jpeg" class="d-block w-100 " alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="fw-bold" style="text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); ">Julio</h5>
+                                <p class="fw-bold" style="text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); ">Some
+                                    representative placeholder content for the second slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="testimonio3.jpeg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="fw-bold" style="text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); ">Pedro</h5>
+                                <p class="fw-bold" style="text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); ">Some
+                                    representative placeholder content for the third slide.</p>
+                            </div>
                         </div>
                     </div>
-                    <!-- Las demás diapositivas siguen el mismo patrón que la anterior -->
-                    <div class="carousel-item">
-                        <img src="testimonio2.jpeg" class="d-block w-100 " alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5 class="fw-bold" style="text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); ">Julio</h5>
-                            <p class="fw-bold" style="text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); ">Some representative placeholder content for the second slide.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="testimonio3.jpeg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5 class="fw-bold" style="text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); ">Pedro</h5>
-                            <p class="fw-bold" style="text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); ">Some representative placeholder content for the third slide.</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                    <!-- 
-                        - carousel-control-prev: Define el botón para retroceder a la diapositiva anterior.
-                    -->
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                    <!-- 
-                        - carousel-control-prev-icon: Establece el icono para retroceder.
-                        - aria-hidden="true": Hace que el icono sea accesible solo para los elementos visuales.
-                    -->
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                    <!-- 
-                        - carousel-control-next: Define el botón para avanzar a la siguiente diapositiva.
-                    -->
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                    <!-- 
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <!-- 
+                    - carousel-control-prev: Define el botón para retroceder a la diapositiva anterior.
+                -->
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <!-- 
+                    - carousel-control-prev-icon: Establece el icono para retroceder.
+                    - aria-hidden="true": Hace que el icono sea accesible solo para los elementos visuales.
+                -->
+                        <span class="visually-hidden">Previous</span>
+                        <!-- 
+                    - visually-hidden: Oculta visualmente el contenido, pero sigue siendo detectable por tecnologías de asistencia. Es una clase de Bootstrap diseñada específicamente para mejorar la accesibilidad.
+                -->
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <!-- 
+                    - carousel-control-next: Define el botón para avanzar a la siguiente diapositiva.
+                -->
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <!-- 
                         - carousel-control-next-icon: Establece el icono para avanzar.
                     -->
-                </button>
+                        <span class="visually-hidden">Next</span>
+                        <!-- 
+                        - visually-hidden: Oculta visualmente el contenido, pero sigue siendo detectable por tecnologías de asistencia. Es una clase de Bootstrap diseñada específicamente para mejorar la accesibilidad.
+                    -->
+                    </button>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- 
-    - script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js": Incluye el archivo JS de Bootstrap para habilitar la funcionalidad de los componentes interactivos como el carrusel.
--->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</body>
 
 </html>
