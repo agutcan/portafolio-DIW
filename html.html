@@ -475,11 +475,11 @@
         </div>
     </section>
 
-    <section id="testimonios" class="container flex-grow-3 mt-2">
+    <section id="testimonios" class="container flex-grow-3 my-2">
         <!-- 
             - container: Contenedor con un ancho adaptativo que ayuda a alinear los elementos dentro de él.
             - flex-grow-3: Hace que el contenedor ocupe todo el espacio disponible en la página.
-            - mt-5: Aplica un margen superior de tamaño 5 (aproximadamente 3 rem).
+            - my-2: Aplica un margen superior y inferior de tamaño 2.
         -->
         <div class="d-flex flex-column align-items-center justify-content-center">
             <!-- 
@@ -610,82 +610,51 @@
         </div>
     </section>
 
-    <section id="contacto" class="container-fluid flex-grow-4 d-flex justify-content-center align-items-center mb-5">
+    <footer id="contacto" class="container-fluid d-flex justify-content-center align-items-center text-center text-white" style="background-color: rgb(7, 7, 29); height: 200px;">
         <!-- 
-            - container: Contenedor que ocupa todo el ancho disponible.
-            - flex-grow-4: Hace que el contenedor crezca y ocupe el espacio disponible en la página.
-            - d-flex: Aplica el modelo de diseño Flexbox.
-            - justify-content-center: Centra los elementos en el eje horizontal.
-            - align-items-center: Centra los elementos en el eje vertical.
+            - container-fluid: Ocupa todo el ancho disponible del viewport.
+            - d-flex: Activa el sistema de flexbox para el contenido.
+            - justify-content-center: Centra horizontalmente los elementos dentro del contenedor.
+            - align-items-center: Centra verticalmente los elementos dentro del contenedor.
+            - text-center: Alinea el texto al centro.
+            - text-white: Aplica el color blanco al texto.
+    
+            - background-color: Establece un color de fondo personalizado (azul oscuro).
+            - height: Define una altura fija de 200 píxeles para el footer.
         -->
-        <div class="text-center">
-            <!-- 
-                - text-center: Centra el contenido dentro del contenedor.
-            -->
-            <h2 class="fw-bold display-4 my-4 ">Contacto</h2>
+    
+        <div>
+            <!-- Contenedor principal para la información de contacto -->
+            <p class="fw-bold fs-4 mb-3">Contacto</p>
             <!-- 
                 - fw-bold: Aplica negrita al texto.
-                - display-4: Hace que el tamaño de la fuente sea grande (clase de Bootstrap para títulos).
-                - mb-4: Aplica un margen inferior de tamaño 4.
+                - fs-4: Tamaño de fuente grande.
+                - mb-3: Margen inferior para separar del contenido siguiente.
             -->
-            <div class="card shadow-lg border-0" style="max-width: 600px;">
+    
+            <!-- Información de dirección -->
+            <p class="fs-6 mb-1"><strong>🏢 Mi oficina:</strong> 1234 Div St #1000, San Francisco, CA 9251</p>
+    
+            <!-- Horario de atención -->
+            <p class="fs-6 mb-1"><strong>🕒 Horario:</strong> M-F: 8am - 6pm | S-S: 10am - 4pm</p>
+    
+            <!-- Información de contacto -->
+            <p class="fs-6 mb-3"><strong>📧 Contactame:</strong> Ejemplo@email.com | 📞 (940) 262-2301</p>
+    
+            <!-- Redes sociales -->
+            <div class="d-flex justify-content-center gap-4">
                 <!-- 
-                    - card: Crea una tarjeta con estilo en Bootstrap.
-                    - shadow-lg: Aplica una sombra grande alrededor de la tarjeta.
-                    - border-0: Elimina el borde de la tarjeta.
-                    - max-width: 600px;: Establece un ancho máximo para la tarjeta.
+                    - d-flex: Usa Flexbox para organizar los enlaces.
+                    - justify-content-center: Centra los enlaces horizontalmente.
+                    - gap-4: Aplica un espacio de 1.5 rem entre los enlaces.
                 -->
-                <div class="card-body p-5">
-                    <!-- 
-                        - card-body: Crea un área dentro de la tarjeta para contener el contenido.
-                        - p-5: Aplica un relleno (padding) de tamaño 5.
-                    -->
-                    <p class="fs-5"><strong>🏢 Mi oficina</strong><br>1234 Div St #1000, San Francisco, CA 9251</p>
-                    <!-- 
-                        - fs-5: Define el tamaño de la fuente.
-                        - strong: Aplica un estilo en negrita al texto.
-                    -->
-                    <p class="fs-5"><strong>🕒 Horario:</strong><br>M-F: 8am - 6pm<br>S-S: 10am - 4pm</p>
-                    <p class="fs-5"><strong>📧 Contactame</strong><br>Ejemplo@email.com<br>📞 (940) 262-2301</p>
-                    <div class="d-flex justify-content-center gap-4 mt-3">
-                        <!-- 
-                            - d-flex: Aplica el modelo de diseño Flexbox.
-                            - justify-content-center: Centra los elementos en el eje horizontal.
-                            - gap-4: Aplica un espacio de 1.5 rem entre los elementos.
-                            - mt-3: Aplica un margen superior de tamaño 3.
-                        -->
-                        <a href="#" class="text-primary fs-5"><i class="bi bi-facebook"></i> Facebook</a>
-                        <!-- 
-                            - text-primary: Aplica el color primario.
-                            - fs-5: Establece el tamaño de la fuente.
-                            - <i class="bi bi-facebook"></i>: Icono de Facebook de Bootstrap Icons.
-                        -->
-                        <a href="#" class="text-info fs-5"><i class="bi bi-twitter"></i> Twitter</a>
-                        <a href="#" class="text-dark fs-5"><i class="bi bi-linkedin"></i> LinkedIn</a>
-                    </div>
-                </div>
+                <a href="#" class="text-primary fs-5"><i class="bi bi-facebook"></i> Facebook</a>
+                <a href="#" class="text-info fs-5"><i class="bi bi-twitter"></i> Twitter</a>
+                <a href="#" class="text-light fs-5"><i class="bi bi-linkedin"></i> LinkedIn</a>
             </div>
         </div>
-    </section>
-    <footer class="container-fluid d-flex justify-content-center align-items-center text-center text-white " style="background-color: rgb(7, 7, 29); height: 200px;">
-        <!-- 
-        - container-fluid: Ocupa todo el ancho disponible del viewport.
-        - d-flex: Activa el sistema de flexbox para el contenido.
-        - justify-content-center: Centra horizontalmente los elementos dentro del contenedor.
-        - align-items-center: Centra verticalmente los elementos dentro del contenedor.
-        - text-center: Alinea el texto al centro.
-        - text-white: Aplica el color blanco al texto.
-        
-        - background-color: Establece un color de fondo personalizado (azul oscuro).
-        - height: Define una altura fija de 200 píxeles para el footer.
-    -->
-        <p class="text-center" >Footer</p>
-        <!-- 
-            - p: Define un párrafo para el contenido del footer.
-            - text-center: Centra el texto horizontalmente dentro del párrafo. 
-        -->
     </footer>
-
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
